@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import ClickHearts from '@/components/ClickHearts'
+import BackgroundMusic from '@/components/BackgroundMusic'
+import FloatingQuotes from '@/components/FloatingQuotes'
 
 export const metadata: Metadata = {
   title: 'For Muskan, with love ♥',
@@ -13,6 +15,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <ClickHearts />
+        <BackgroundMusic />
+        <FloatingQuotes />
       </body>
     </html>
   )
